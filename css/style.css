@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,8 +11,22 @@
     --primary-color: black;
     --secondary-color: white;
 
-    --primary-font: calibri, sans-serif;
+    --font-principal-title: "Roboto", sans-serif;
+    --font-paragraph: sans-serif;
 }
+
+/* default settigs tags*/
+
+p{
+    font-family: var(--font-paragraph);
+    text-align: justify;
+}
+
+img{
+    cursor: pointer;
+}
+
+/* header settings*/
 
 header{
     width: 100%;
@@ -21,11 +37,51 @@ header #principal_title{
     text-align: center;
     color: var(--secondary-color);
     font-size: 2em;
-    font-family: var(--primary-font);
+    font-family: var(--font-principal-title);
     padding: 20px;
 }
 
+/* container settings*/
+
+.container{
+    display: flex;
+}
+
+/* Section settings*/
+
+aside{
+    width: 300px;
+    height: 100%;
+}
+
+.img_profile img{
+    width: 250px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+/* main settings*/
+
 main{
     width: 800px;
-    padding: 10px;
+    padding: 20px;
+}
+
+/* article settings*/
+
+article{
+   
+}
+
+/* footer settings*/
+
+footer{
+    background-color: var(--primary-color);
+}
+
+footer p{
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 30px 0px;
 }
