@@ -12,28 +12,39 @@
     --secondary-color: white;
 
     --font-principal-title: "Roboto", sans-serif;
-    --font-paragraph: sans-serif;
+    --font-text: arial, sans-serif;
 }
 
 /* default settigs tags*/
 
 p{
-    font-family: var(--font-paragraph);
+    font-family: var(--font-text);
     text-align: justify;
+    padding: 10px 0px;
+    text-indent: 10px;
+    line-height: 20pt;
 }
 
 img{
     cursor: pointer;
 }
 
-/* header settings*/
+/* container settings*/
 
-header{
-    width: 100%;
+.container{
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Aside settings*/
+
+aside{
+    min-width: 300px;
+    max-width: 500px;
     background-color: var(--primary-color);
 }
 
-header #principal_title{
+aside #principal_title{
     text-align: center;
     color: var(--secondary-color);
     font-size: 2em;
@@ -41,38 +52,38 @@ header #principal_title{
     padding: 20px;
 }
 
-/* container settings*/
-
-.container{
-    display: flex;
-}
-
-/* Section settings*/
-
-aside{
-    width: 300px;
-    height: 100%;
+aside p{
+    padding: 0px 20px;
+    color: var(--secondary-color);
 }
 
 .img_profile img{
     width: 250px;
     border-radius: 50%;
-    margin: 10px;
-    border: 2px solid black;
+    margin: 20px auto;
+    display: block;
 }
 
 /* main settings*/
 
 main{
-    width: 800px;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
+    flex: 1;
 }
 
 /* article settings*/
 
-article{
-   
+article h1{
+   font-size: 2em;
+   font-family: var(--font-text);
 }
+
+article h2{
+    font-size: 1.4em;
+    font-family: var(--font-text);
+ }
 
 /* footer settings*/
 
