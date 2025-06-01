@@ -40,7 +40,7 @@ img{
 
 aside{
     min-width: 300px;
-    max-width: 500px;
+    max-width: 400px;
     background-color: var(--primary-color);
 }
 
@@ -69,7 +69,7 @@ aside p{
 main{
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
     flex: 1;
 }
 
