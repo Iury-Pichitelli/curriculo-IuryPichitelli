@@ -55,14 +55,14 @@ aside h1{
     color: var(--secondary-color);
     font-size: 2em;
     font-family: var(--font-principal-title);
-    padding-left: 20px;
-    border-left: 7px solid var(--secondary-color);
+    text-align: center;
 }
 
 aside h3{
     margin: 20px;
     color: var(--secondary-color);
     font-family: var(--font-principal-title);
+    padding-left: 10px;
 }
 
 aside h2{
@@ -72,6 +72,16 @@ aside h2{
     background-color: var(--third-color);
     padding: 5px 20px;
     margin: 5px -2px;
+}
+
+aside p a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+aside p a:hover{
+    text-decoration: underline;
+    color: aqua;
 }
 
 aside p{
@@ -102,8 +112,19 @@ main{
 /* article settings*/
 
 article h1{
-   font-size: 2em;
-   font-family: var(--font-text);
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-family: var(--font-principal-title);
+    text-align: center;
+}
+
+.underline_name{
+    background-color: var(--primary-color);
+    width: 600px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 article h2{
