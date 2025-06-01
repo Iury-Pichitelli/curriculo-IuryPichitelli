@@ -10,6 +10,7 @@
 :root{
     --primary-color: black;
     --secondary-color: white;
+    --third-color:rgb(31, 31, 31);
 
     --font-principal-title: "Roboto", sans-serif;
     --font-text: arial, sans-serif;
@@ -29,6 +30,10 @@ img{
     cursor: pointer;
 }
 
+hr{
+    margin: 20px;
+}
+
 /* container settings*/
 
 .container{
@@ -42,14 +47,31 @@ aside{
     min-width: 300px;
     max-width: 400px;
     background-color: var(--primary-color);
+    box-shadow: 3px -2px 6px rgba(0, 0, 0, 0.5);
 }
 
-aside #principal_title{
-    text-align: center;
+aside h1{
+    margin: 10px 20px;
     color: var(--secondary-color);
     font-size: 2em;
     font-family: var(--font-principal-title);
-    padding: 20px;
+    padding-left: 20px;
+    border-left: 7px solid var(--secondary-color);
+}
+
+aside h3{
+    margin: 20px;
+    color: var(--secondary-color);
+    font-family: var(--font-principal-title);
+}
+
+aside h2{
+    margin: 10px 20px;
+    color: var(--secondary-color);
+    font-family: var(--font-principal-title);
+    background-color: var(--third-color);
+    padding: 5px 20px;
+    margin: 5px -2px;
 }
 
 aside p{
@@ -62,6 +84,10 @@ aside p{
     border-radius: 50%;
     margin: 20px auto;
     display: block;
+}
+
+.img_profile img:hover{
+    outline: 2px solid var(--secondary-color);
 }
 
 /* main settings*/
@@ -83,16 +109,6 @@ article h1{
 article h2{
     font-size: 1.4em;
     font-family: var(--font-text);
+    border-left: 7px solid var(--primary-color);
+    padding-left: 10px;
  }
-
-/* footer settings*/
-
-footer{
-    background-color: var(--primary-color);
-}
-
-footer p{
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 30px 0px;
-}
