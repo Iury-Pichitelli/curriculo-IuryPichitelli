@@ -176,6 +176,7 @@ article h2{
     font-size: 1.4em;
     font-family: var(--font-text);
     padding-left: 10px;
+    display: inline;
  }
 
 
@@ -184,5 +185,9 @@ article h2{
     padding-left: 15px;
 }
 
+.work_icon::before{
+    content: url(/images/profile/bloco_02/work_48.png);
+
+}
 
 /* 1600px media*/
