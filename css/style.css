@@ -149,7 +149,7 @@ aside h2{
 main{
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 40px 40px 0px 60px;
     flex: 1;
 }
 
@@ -179,15 +179,28 @@ article h2{
     display: inline;
  }
 
+.bloco_aricle_work{
+    padding: 15px 20px 0px 40px;
+}
 
 .linha_lateral_article{
-    border-left: 5px solid var(--third-color);
-    padding-left: 15px;
+    background-color: var(--third-color);
+    width: 8px ;
+    height: 500px;
+    position: absolute;
 }
 
-.work_icon::before{
-    content: url(/images/profile/bloco_02/work_48.png);
-
+.linha_lateral_article ul{
+    list-style-type: none;
 }
+
+.linha_lateral_article img{
+    position: relative;
+    right: 23px;
+    background-color: var(--third-color);
+    border-radius: 50%;
+    padding: 3px;
+}
+
 
 /* 1600px media*/
