@@ -10,13 +10,14 @@
 :root{
     --primary-color: black;
     --secondary-color: white;
-    --third-color:rgb(31, 31, 31);
+    --third-color:rgb(41, 41, 41);
 
     --font-principal-title: "Roboto", sans-serif;
     --font-text: arial, sans-serif;
 }
 
 /* default settigs tags*/
+
 
 p{
     font-family: var(--font-text);
@@ -71,7 +72,7 @@ aside h2{
     font-family: var(--font-principal-title);
     background-color: var(--third-color);
     padding: 5px 20px;
-    margin: 5px -2px;
+    margin: 5px -3px;
 }
 
 aside p a{
@@ -130,6 +131,9 @@ article h1{
 article h2{
     font-size: 1.4em;
     font-family: var(--font-text);
-    border-left: 7px solid var(--primary-color);
+    border-left: 7px solid var(--third-color);
     padding-left: 10px;
  }
+
+
+/* 1600px media*/
