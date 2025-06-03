@@ -9,8 +9,9 @@
 
 :root{
     --primary-color: black;
-    --secondary-color: white;
+    --secondary-color: #f2f8f7;
     --third-color:rgb(41, 41, 41);
+    --text-color:white;
 
     --font-principal-title: "Roboto", sans-serif;
     --font-text: arial, sans-serif;
@@ -18,11 +19,14 @@
 
 /* default settigs tags*/
 
+body{
+    background-color: var(--secondary-color);
+}
 
 p{
     font-family: var(--font-text);
     text-align: justify;
-    padding: 10px 0px;
+    margin: 10px 0px;
     text-indent: 10px;
     line-height: 20pt;
 }
@@ -32,7 +36,7 @@ img{
 }
 
 hr{
-    margin: 20px;
+    margin-top: 20px;
 }
 
 /* container settings*/
@@ -51,23 +55,7 @@ aside{
     box-shadow: 3px -2px 6px rgba(0, 0, 0, 0.5);
 }
 
-aside h1{
-    margin: 10px 20px;
-    color: var(--secondary-color);
-    font-size: 2em;
-    font-family: var(--font-principal-title);
-    text-align: center;
-}
-
-aside h3{
-    margin: 20px;
-    color: var(--secondary-color);
-    font-family: var(--font-principal-title);
-    padding-left: 10px;
-}
-
 aside h2{
-    margin: 10px 20px;
     color: var(--secondary-color);
     font-family: var(--font-principal-title);
     background-color: var(--third-color);
@@ -75,20 +63,73 @@ aside h2{
     margin: 5px -3px;
 }
 
-aside p a{
+.bloco_1, .bloco_2{
+    padding: 15px;
+}
+
+/* Aside bloco 01*/
+
+.bloco_1 h1{
+    color: var(--secondary-color);
+    font-size: 2em;
+    font-family: var(--font-principal-title);
+    text-align: center;
+}
+
+.bloco_1 h3{
+    margin-top: 10px;
+    text-align: left;
+    color: var(--secondary-color);
+    font-family: var(--font-principal-title);
+    padding-left: 10px;
+}
+
+.bloco_1 p{
+    color: var(--text-color);
+    padding-left: 30px;
+}
+
+.bloco_1 p a{
     text-decoration: none;
     color: var(--secondary-color);
 }
 
-aside p a:hover{
+.bloco_1 p a:hover{
     text-decoration: underline;
     color: aqua;
 }
 
-aside p{
-    padding: 0px 20px;
+/* icones bloco 01*/
+
+.bloco_1 .phone_icon::before{
+    content: url("/images/profile/bloco_01/phone_icon.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.bloco_1 .email_icon::before{
+    content: url("/images/profile/bloco_01/email_icon.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.bloco_1 .linkedin_icon::before{
+    content: url("/images/profile/bloco_01/linkedin_icon.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+/* Aside bloco 02*/
+
+.bloco_2 p{
     color: var(--secondary-color);
 }
+
+/* image profile*/
 
 .img_profile img{
     width: 250px;
@@ -104,7 +145,7 @@ aside p{
 /* main settings*/
 
 main{
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 40px;
     flex: 1;
@@ -113,7 +154,7 @@ main{
 /* article settings*/
 
 article h1{
-    margin-bottom: 10px;
+    margin: 20px 0px;
     font-size: 3em;
     font-family: var(--font-principal-title);
     text-align: center;
@@ -129,6 +170,7 @@ article h1{
 }
 
 article h2{
+    margin: 20px 0px;
     font-size: 1.4em;
     font-family: var(--font-text);
     border-left: 7px solid var(--third-color);
