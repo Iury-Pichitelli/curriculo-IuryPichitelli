@@ -60,7 +60,7 @@ aside h2{
     font-family: var(--font-principal-title);
     background-color: var(--third-color);
     padding: 5px 20px;
-    margin: 5px -3px;
+    margin: 0px -3px;
 }
 
 .bloco_1, .bloco_2{
@@ -86,7 +86,8 @@ aside h2{
 
 .bloco_1 p{
     color: var(--text-color);
-    padding-left: 30px;
+    padding: 0px 0px 20px 35px;
+    margin: 0;
 }
 
 .bloco_1 p a{
@@ -105,21 +106,21 @@ aside h2{
     content: url("/images/profile/bloco_01/phone_icon.svg");
     display: inline-block;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
 .bloco_1 .email_icon::before{
     content: url("/images/profile/bloco_01/email_icon.svg");
     display: inline-block;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
 .bloco_1 .linkedin_icon::before{
     content: url("/images/profile/bloco_01/linkedin_icon.svg");
     display: inline-block;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
 
@@ -135,11 +136,12 @@ aside h2{
     width: 250px;
     border-radius: 50%;
     margin: 20px auto;
+    border: 5px solid var(--third-color); 
     display: block;
 }
 
 .img_profile img:hover{
-    outline: 2px solid var(--secondary-color);
+    border: 5px solid var(--secondary-color); 
 }
 
 /* main settings*/
@@ -173,9 +175,14 @@ article h2{
     margin: 20px 0px;
     font-size: 1.4em;
     font-family: var(--font-text);
-    border-left: 7px solid var(--third-color);
     padding-left: 10px;
  }
+
+
+.linha_lateral_article{
+    border-left: 5px solid var(--third-color);
+    padding-left: 15px;
+}
 
 
 /* 1600px media*/
