@@ -8,9 +8,9 @@
 }
 
 :root{
-    --primary-color: black;
+    --primary-color: #012E58;
     --secondary-color: #f2f8f7;
-    --third-color:rgb(41, 41, 41);
+    --third-color:#004381;
     --text-color:white;
 
     --font-principal-title: "Roboto", sans-serif;
@@ -163,7 +163,7 @@ article h1{
 }
 
 .underline_name{
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     width: 600px;
     height: 7px;
     display: block;
@@ -172,7 +172,6 @@ article h1{
 }
 
 article h2{
-    margin: 20px 0px;
     font-size: 1.4em;
     font-family: var(--font-text);
     display: inline;
@@ -183,24 +182,24 @@ article h2{
 
 .bloco_article_work{
     padding: 15px 20px 0px 40px;
-    margin-top: 20px;
 }
 
 .title_bloco_article{
-    margin: 20px 0px;
     font-size: 1.4em;
     font-family: var(--font-text);
-    padding-left: 10px;
-    display: inline;
+    padding: 25px 0px 0px 10px;
+    display: inline-block;
     color:var(--third-color);
  }
+
+/* linha lateral */ 
 
 .linha_lateral_article{
     background-color: var(--third-color);
     width: 8px ;
-    height: 500px;
+    height: 1000px;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 28px;
 }
 
 .linha_lateral_article ul{
@@ -209,11 +208,12 @@ article h2{
 
 /* fisrt circle*/
 
-.linha_lateral_article img{
+.linha_lateral_article .work_icon{
     position: relative;
     right: 16px;
     top: 4px;
 }
+
 .first_circle{
     background-color: var(--third-color);
     border-radius: 50%;
@@ -226,5 +226,20 @@ article h2{
 
 /* second circle*/
 
+.linha_lateral_article .study_icon{
+    position: relative;
+    right: 16px;
+    top: 337px;
+}
+
+.second_circle{
+    background-color: var(--third-color);
+    border-radius: 50%;
+    padding: 26px;
+    position: absolute;
+    top: 375px;
+    right: -22px;
+    display: block;
+}
 
 /* 1600px media*/
