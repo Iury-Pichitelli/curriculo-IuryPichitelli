@@ -12,6 +12,7 @@
     --primary-color: #012E58;
     --secondary-color: #f2f8f7;
     --third-color:#004381;
+    --fourth-color:#005cb3;
     --text-color:white;
     --bar-color: rgb(199, 199, 199);
 
@@ -148,6 +149,32 @@ aside .bloco_1 .linkedin_icon::before{
 
 aside .bloco_2 p{
     color: var(--secondary-color);
+    font-family: var(--font-text);
+   
+    font-weight: bold;
+}
+
+aside .bloco_2 p span{
+    float: inline-end;
+    padding-right: 10px;
+}
+
+aside .bloco_2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 10px 10px;
+    margin: 0;
+}
+
+
+aside .bloco_2 ul li{
+    background-color: var(--secondary-color);
+    width: 50px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 2px;
+    list-style-type: none;
 }
 
 /* image profile*/
