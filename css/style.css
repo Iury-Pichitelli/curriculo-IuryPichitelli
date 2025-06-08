@@ -74,6 +74,12 @@ main{
     }
 }
 
+@media(min-width: 1000px){
+    aside{
+        display: none;
+    }
+}
+
 /* Aside settings*/
 
 aside{
@@ -362,7 +368,7 @@ article h2{
 
 .bloco_article_study ul p{
     display: inline;
-    margin: 0px 50px;
+    margin: 20px 50px;
 }
 
 .bloco_article_study ul #first_point::after{
