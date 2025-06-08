@@ -85,18 +85,13 @@ aside .bloco_1 h1{
     text-align: center;
 }
 
-aside .bloco_1 h3{
-    margin-top: 10px;
+aside .bloco_1 p{
+    margin-bottom: 30px;
     text-align: left;
     color: var(--secondary-color);
     font-family: var(--font-principal-title);
     padding-left: 10px;
-}
-
-aside .bloco_1 p{
-    color: var(--text-color);
-    padding: 0px 0px 20px 35px;
-    margin: 0;
+    text-indent: 0px;
 }
 
 aside .bloco_1 p a{
@@ -118,7 +113,7 @@ aside .bloco_1 .phone_icon::before{
     margin-right: 12px;
     background-color: var(--third-color);
     border-radius: 50%;
-    padding: 7px 6px 0px 4px;
+    padding: 8px 8px 0px 6px;
 }
 
 aside .bloco_1 .email_icon::before{
@@ -128,7 +123,7 @@ aside .bloco_1 .email_icon::before{
     margin-right: 12px;
     background-color: var(--third-color);
     border-radius: 50%;
-    padding: 5px 5px 0px 5px;
+    padding: 7px 7px 0px 7px;
 }
 
 aside .bloco_1 .linkedin_icon::before{
@@ -138,7 +133,7 @@ aside .bloco_1 .linkedin_icon::before{
     margin-right: 12px;
     background-color: var(--third-color);
     border-radius: 50%;
-    padding: 6px 5px 0px 5px;
+    padding: 8px 8px 0px 7px;
 }
 
 
