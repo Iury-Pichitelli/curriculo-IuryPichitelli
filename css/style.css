@@ -199,18 +199,17 @@ article h2{
 .first_circle{
     background-color: var(--third-color);
     border-radius: 50%;
-    padding: 25px;
+    padding: 26px;
     position: absolute;
     top: -1px;
-    right: -21px;
+    right: -22px;
     display: block;
 }
 
 .linha_lateral_article img{
     position: relative;
-    right: 17px;
-    top: 0px;
-    width: 42px;
+    right: 16px;
+    top: 4px;
 }
 
 /* 1600px media*/
