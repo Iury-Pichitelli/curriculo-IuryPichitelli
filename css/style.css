@@ -12,6 +12,7 @@
     --secondary-color: #f2f8f7;
     --third-color:#004381;
     --text-color:white;
+    --bar-color: rgb(199, 199, 199);
 
     --font-principal-title: "Roboto", sans-serif;
     --font-text: arial, sans-serif;
@@ -63,7 +64,11 @@ aside h2{
     margin: 0px -3px;
 }
 
-.bloco_1, .bloco_2{
+.bloco_1{
+    padding: 15px 10px;
+}
+
+.bloco_2{
     padding: 15px;
 }
 
@@ -107,6 +112,9 @@ aside h2{
     display: inline-block;
     vertical-align: middle;
     margin-right: 12px;
+    background-color: var(--third-color);
+    border-radius: 50%;
+    padding: 7px 6px 0px 4px;
 }
 
 .bloco_1 .email_icon::before{
@@ -148,9 +156,16 @@ aside h2{
 
 main{
     max-width: 900px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 40px 40px 0px 60px;
     flex: 1;
+}
+
+@media (min-width: 1700px ) {
+    main{
+        margin: 0px 142px;
+    }
 }
 
 /* article settings*/
@@ -164,7 +179,7 @@ article h1{
 
 .underline_name{
     background-color: var(--third-color);
-    width: 600px;
+    width: 70%;
     height: 7px;
     display: block;
     margin: 0 auto;
@@ -178,25 +193,17 @@ article h2{
     color:var(--third-color);
  }
 
-/* linha lateral article */
-
-.bloco_article_work{
-    padding: 15px 20px 0px 40px;
-}
-
-.title_bloco_article{
-    font-size: 1.4em;
+article h3{
+    font-size: 1em;
     font-family: var(--font-text);
-    padding: 25px 0px 0px 10px;
-    display: inline-block;
-    color:var(--third-color);
+    margin-top: 20px;
  }
 
 /* linha lateral */ 
 
 .linha_lateral_article{
-    background-color: var(--third-color);
-    width: 8px ;
+    background-color: var(--bar-color);
+    width: 6px ;
     height: 1000px;
     position: absolute;
     margin-top: 28px;
@@ -206,40 +213,65 @@ article h2{
     list-style-type: none;
 }
 
+/* blocos article */
+
+.bloco_article_work, .bloco_article_study{
+    padding: 15px 20px 0px 40px;
+}
+
 /* fisrt circle*/
 
-.linha_lateral_article .work_icon{
+.bloco_article_work .work_icon{
     position: relative;
-    right: 16px;
-    top: 4px;
-}
-
-.first_circle{
+    right: 61px;
+    top: 10px;
     background-color: var(--third-color);
     border-radius: 50%;
-    padding: 26px;
-    position: absolute;
-    top: -1px;
-    right: -22px;
-    display: block;
+    padding: 5px;
 }
+
+.bloco_article_work .title_bloco_article{
+    font-size: 1.4em;
+    font-family: var(--font-text);
+    display: inline;
+    color:var(--third-color);
+    right: 52px;
+    top: -10px;
+    position: relative;
+    vertical-align: middle;
+ }
+
+/* .bloco_article_work .first_short_circle{
+    background-color: var(--third-color);
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: 73px;
+    right: -5px;
+    display: block;
+}*/
 
 /* second circle*/
 
-.linha_lateral_article .study_icon{
+.bloco_article_study .study_icon{
     position: relative;
-    right: 16px;
-    top: 337px;
-}
-
-.second_circle{
+    right: 61px;
+    top: 10px;
     background-color: var(--third-color);
     border-radius: 50%;
-    padding: 26px;
-    position: absolute;
-    top: 375px;
-    right: -22px;
-    display: block;
+    padding: 5px;
+    vertical-align: middle;
 }
+
+.bloco_article_study .title_bloco_article{
+    font-size: 1.4em;
+    font-family: var(--font-text);
+    display: inline;
+    color:var(--third-color);
+    right: 52px;
+    top: 10px;
+    position: relative;
+    vertical-align: middle;
+ }
 
 /* 1600px media*/
