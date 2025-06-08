@@ -57,6 +57,23 @@ ul li::marker{
     margin: 0 auto;
 }
 
+/* main settings*/
+
+main{
+    max-width: 900px;
+    min-width: 320px;
+    height: max-content;
+    margin: 0 auto;
+    padding: 40px 40px 0px 60px;
+    flex: 1;
+}
+
+@media (min-width: 1700px ) {
+    main{
+        margin: 0px 142px;
+    }
+}
+
 /* Aside settings*/
 
 aside{
@@ -70,10 +87,27 @@ aside h2{
     color: var(--secondary-color);
     font-family: var(--font-principal-title);
     background-color: var(--third-color);
-    padding: 5px 20px;
-    margin: 0px -3px;
+    padding: 8px 20px;
+    margin: 10px -3px;
     box-shadow: var(--default-shadow);
 }
+
+/* aside image profile*/
+
+aside .img_profile img{
+    width: 250px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 5px solid var(--third-color); 
+    display: block;
+    box-shadow: var(--default-shadow);
+}
+
+aside .img_profile img:hover{
+    border: 5px solid var(--secondary-color); 
+}
+
+/* aside blocos */
 
 aside .bloco_1{
     padding: 15px 10px;
@@ -83,14 +117,11 @@ aside .bloco_2{
     padding: 15px;
 }
 
-/* Aside bloco 01*/
-
-aside .bloco_1 h1{
-    color: var(--secondary-color);
-    font-size: 2em;
-    font-family: var(--font-principal-title);
-    text-align: center;
+aside .bloco_3{
+    padding: 15px;
 }
+
+/* Aside bloco 01*/
 
 aside .bloco_1 p{
     margin-bottom: 30px;
@@ -141,7 +172,7 @@ aside .bloco_1 .linkedin_icon::before{
     margin-right: 12px;
     background-color: var(--third-color);
     border-radius: 50%;
-    padding: 8px 8px 0px 7px;
+    padding: 8px 8px 0px 8px;
 }
 
 
@@ -150,7 +181,6 @@ aside .bloco_1 .linkedin_icon::before{
 aside .bloco_2 p{
     color: var(--secondary-color);
     font-family: var(--font-text);
-   
     font-weight: bold;
 }
 
@@ -177,36 +207,16 @@ aside .bloco_2 ul li{
     list-style-type: none;
 }
 
-/* image profile*/
+/* Aside bloco 03*/
 
-.img_profile img{
-    width: 250px;
-    border-radius: 50%;
-    margin: 20px auto;
-    border: 5px solid var(--third-color); 
-    display: block;
-    box-shadow: var(--default-shadow);
-}
-
-.img_profile img:hover{
-    border: 5px solid var(--secondary-color); 
-}
-
-/* main settings*/
-
-main{
-    max-width: 900px;
-    min-width: 320px;
-    height: max-content;
-    margin: 0 auto;
-    padding: 40px 40px 0px 60px;
-    flex: 1;
-}
-
-@media (min-width: 1700px ) {
-    main{
-        margin: 0px 142px;
-    }
+aside .bloco_3 p{
+    margin-bottom: 30px;
+    text-align: left;
+    color: var(--secondary-color);
+    font-family: var(--font-principal-title);
+    padding-left: 10px;
+    text-indent: 0px;
+    
 }
 
 /* article settings*/
@@ -245,7 +255,7 @@ article h3{
 .linha_lateral_article{
     background-color: var(--bar-color);
     width: 6px ;
-    height: 1100px;
+    height: 1500px;
     position: absolute;
     margin-top: 28px;
 }
@@ -256,11 +266,11 @@ article h3{
 
 /* blocos article */
 
-.bloco_article_work, .bloco_article_study, .bloco_article_skills{
+.bloco_article_work, .bloco_article_study, .bloco_article_skills, .bloco_article_courses{
     padding: 15px 20px 0px 40px;
 }
 
-/* work block*/
+/* work bloco*/
 
 .bloco_article_work .work_icon{
     position: relative;
@@ -269,6 +279,7 @@ article h3{
     background-color: var(--third-color);
     border-radius: 50%;
     padding: 5px;
+    
 }
 
 .bloco_article_work .title_bloco_article{
@@ -292,7 +303,7 @@ article h3{
     right: 45px;
 }
 
-/* study block*/
+/* study bloco*/
 
 .bloco_article_study .study_icon{
     position: relative;
@@ -325,7 +336,7 @@ article h3{
     right: 45px;
 }
 
-/* skills block*/
+/* skills bloco*/
 
 .bloco_article_skills .skills_icon{
     position: relative;
@@ -370,5 +381,36 @@ article h3{
     display: inline;
 }
 
+/* courses bloco*/
+
+.bloco_article_courses .courses_icon{
+    position: relative;
+    right: 61px;
+    top: 10px;
+    background-color: var(--third-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.bloco_article_courses .title_bloco_article{
+    font-size: 1.4em;
+    font-family: var(--font-text);
+    display: inline;
+    color:var(--third-color);
+    right: 52px;
+    top: -10px;
+    position: relative;
+    vertical-align: middle;
+ }
+
+ .bloco_article_courses .first_short_circle{
+    background-color:var(--third-color);
+    border-radius: 50%;
+    padding: 8px;
+    position: relative;
+    display: inline-block;
+    top: -20px;
+    right: 45px;
+}
 
 /* 1600px media*/
