@@ -103,22 +103,21 @@ aside h2{
 /* icones bloco 01*/
 
 .bloco_1 .phone_icon::before{
-    content: url("/images/bloco_01/phone_icon.png");
+    content: url("../images/bloco_01/phone_icon.png");
     display: inline-block;
     vertical-align: middle;
     margin-right: 12px;
 }
 
 .bloco_1 .email_icon::before{
-    content: url("/images/bloco_01/email_icon.svg");
-    
+    content: url("../images/bloco_01/email_icon.svg");
     display: inline-block;
     vertical-align: middle;
     margin-right: 12px;
 }
 
 .bloco_1 .linkedin_icon::before{
-    content: url("/images/bloco_01/linkedin_icon.svg");
+    content: url("../images/bloco_01/linkedin_icon.svg");
     display: inline-block;
     vertical-align: middle;
     margin-right: 12px;
