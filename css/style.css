@@ -8,14 +8,19 @@
 }
 
 :root{
+    /* colors*/
     --primary-color: #012E58;
     --secondary-color: #f2f8f7;
     --third-color:#004381;
     --text-color:white;
     --bar-color: rgb(199, 199, 199);
 
+    /* text */
     --font-principal-title: "Roboto", sans-serif;
     --font-text: arial, sans-serif;
+
+    /* default shadow*/
+    --default-shadow: 3px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* default settigs tags*/
@@ -66,6 +71,7 @@ aside h2{
     background-color: var(--third-color);
     padding: 5px 20px;
     margin: 0px -3px;
+    box-shadow: var(--default-shadow);
 }
 
 aside .bloco_1{
@@ -92,6 +98,7 @@ aside .bloco_1 p{
     font-family: var(--font-principal-title);
     padding-left: 10px;
     text-indent: 0px;
+    
 }
 
 aside .bloco_1 p a{
@@ -151,6 +158,7 @@ aside .bloco_2 p{
     margin: 20px auto;
     border: 5px solid var(--third-color); 
     display: block;
+    box-shadow: var(--default-shadow);
 }
 
 .img_profile img:hover{
