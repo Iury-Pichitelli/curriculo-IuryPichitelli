@@ -179,7 +179,9 @@ article h2{
     display: inline;
  }
 
-.bloco_aricle_work{
+/* linha lateral article */
+
+.bloco_article_work{
     padding: 15px 20px 0px 40px;
 }
 
@@ -201,6 +203,5 @@ article h2{
     border-radius: 50%;
     padding: 3px;
 }
-
 
 /* 1600px media*/
