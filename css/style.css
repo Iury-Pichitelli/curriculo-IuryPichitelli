@@ -75,15 +75,43 @@ main{
 }
 
 @media(max-width: 1000px){
-    aside{
-        display: none;
+
+    .container {
+        display: block;
     }
+
+    main{
+        padding: 40px;
+    }
+    
+    main article h1{
+        padding: 0;
+        font-size: 1.8em;
+    }
+
+    aside{
+ 
+        width: 100%;
+        max-width: 400px;
+        box-shadow: none;
+    }
+
+    aside .img_profile img{
+        margin: 0;
+    }
+    article .underline_name{
+        background-color: var(--third-color);
+        width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    
 }
 
 /* Aside settings*/
 
 aside{
-    min-width: 300px;
+    min-width: 320px;
     max-width: 400px;
     background-color: var(--primary-color);
     box-shadow: 3px -2px 6px rgba(0, 0, 0, 0.5);
