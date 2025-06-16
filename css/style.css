@@ -45,14 +45,24 @@
     aside{
         width: 0px;
         overflow: hidden;
-        transition: width 0.4s ease-in-out;
+        transition: width 0.5s ease;
+    }
+
+    #image_short_profile{
+        opacity: 0;
     }
 
     aside.show{
         width: 320px;
-        overflow-x: visible;
+        overflow: visible;
+        position: absolute;
+        z-index: 1;
     }
 
+    #image_short_profile.show_img{
+        opacity: 1;
+        transition: opacity 1.5s ease;
+    }
 
 }
 
@@ -118,7 +128,7 @@ main{
     min-width: 320px;
     height: max-content;
     margin: 0 auto;
-    flex: 1;
+    display: flex;
 }
 
 /* Aside settings*/
