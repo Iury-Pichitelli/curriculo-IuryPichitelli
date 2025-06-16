@@ -36,9 +36,9 @@
 /* mobile */
 
 @media(min-width: 1000px){
-    nav{
-        /*display: none;*/
-    }
+    /*nav{
+        display: none;
+    }*/
 }
 
 @media(max-width: 1000px){
@@ -121,6 +121,10 @@ aside{
     background-color: var(--primary-color);
     box-shadow: 3px -2px 6px rgba(0, 0, 0, 0.5);
     display: none;
+}
+
+aside.show{
+    display: block;
 }
 
 aside h2{
