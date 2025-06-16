@@ -36,9 +36,9 @@
 /* mobile */
 
 @media(min-width: 1000px){
-    /*nav{
+    nav{
         display: none;
-    }*/
+    }
 }
 
 @media(max-width: 1000px){
@@ -48,7 +48,7 @@
         transition: width 0.5s ease;
     }
 
-    #image_short_profile{
+    #image_short_profile, .bloco_1, .bloco_2, .bloco_3{
         opacity: 0;
     }
 
@@ -59,10 +59,12 @@
         z-index: 1;
     }
 
-    #image_short_profile.show_img{
+    #image_short_profile.show_elements_aside, .bloco_1.show_elements_aside, .bloco_2.show_elements_aside, .bloco_3.show_elements_aside{
         opacity: 1;
-        transition: opacity 1.5s ease;
+        transition: opacity 1.8s ease;
     }
+
+
 
 }
 
