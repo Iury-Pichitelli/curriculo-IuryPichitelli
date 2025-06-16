@@ -24,6 +24,30 @@
     --default-shadow: 3px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* large screen */
+
+@media (min-width: 1700px ) {
+    main{
+        margin: 0px 142px;
+    }
+
+}
+
+/* mobile */
+
+@media(min-width: 1000px){
+    nav{
+        /*display: none;*/
+    }
+}
+
+@media(max-width: 1000px){
+    aside{
+        display: none;
+    }
+
+}
+
 /* default settigs tags*/
 
 body{
@@ -50,6 +74,26 @@ ul li::marker{
     color: var(--third-color);
 }
 
+/* nav */
+
+nav{
+    background-color: var(--primary-color);
+    width: 100%;
+    min-width: 320px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav a{
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: var(--third-color);
+}
+
 /* container settings*/
 
 .container{
@@ -64,48 +108,7 @@ main{
     min-width: 320px;
     height: max-content;
     margin: 0 auto;
-    padding: 40px 40px 0px 60px;
     flex: 1;
-}
-
-@media (min-width: 1700px ) {
-    main{
-        margin: 0px 142px;
-    }
-}
-
-@media(max-width: 1000px){
-
-    .container {
-        display: block;
-    }
-
-    main{
-        padding: 40px;
-    }
-    
-    main article h1{
-        padding: 0;
-        font-size: 1.8em;
-    }
-
-    aside{
- 
-        width: 100%;
-        max-width: 400px;
-        box-shadow: none;
-    }
-
-    aside .img_profile img{
-        margin: 0;
-    }
-    article .underline_name{
-        background-color: var(--third-color);
-        width: 100%;
-        margin: 0;
-        margin-bottom: 50px;
-    }
-    
 }
 
 /* Aside settings*/
@@ -254,6 +257,10 @@ aside .bloco_3 p{
 }
 
 /* article settings*/
+
+article{
+    padding: 20px 20px 20px 40px;
+}
 
 article h1{
     margin: 20px 0px;
